@@ -1,8 +1,8 @@
 # Proyecto ICN292 
 
 ## 1. Contexto del Proyecto
-* **Empresa:** ""
-* **Rubro:** Construcción
+* **Empresa:** "Inversiones Rumay Limitada"
+* **Rubro:** Construcción RUT: 76380707-K
 * **Problema:** Actualmente, el dueño realiza todos los cálculos de costos de forma manual. Esto genera una demora de aproximadamente x días para entregar una cotización y un margen de error del x% en la estimación de costos, lo que termina impactando en el tiempo de espera de clientes y del desarrollo de los distintos proyectos.
 * **Objetivo del Sistema:** Automatizar el cálculo de los presupuestos y tener una base con los precios de materia prima (materiales, mano de obra, etc.) para reducir los tiempos de respuesta al cliente y evitar errores de presupuesto por fallas en el cálculo de precios y costos.
 
