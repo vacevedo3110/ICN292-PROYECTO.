@@ -1,4 +1,4 @@
-#PYME y Problema
+## PYME y Problema
 
 ## A. Identificación de la PYME
 * **Razón Social:** Inversiones Rumay Limitada
