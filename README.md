@@ -21,7 +21,7 @@ Entrega 1
 
 ## 3. Proyección para la Entrega 2
 * **Stack Tecnológico:** [SQL].
-
+* El modelo de datos planteados serán la base para desarrollar el prototipo funcional en un entorno local (`localhost`)
 
 ## 4. Equipo de Trabajo
 1. **VICENTE IGNACIO ACEVEDO CAMPOS** [Liderazgo del proyecto]  
