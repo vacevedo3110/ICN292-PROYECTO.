@@ -8,7 +8,7 @@
 * **Ubicación principal:** Parcela 28 Rumay, Melipilla, Región Metropolitana.
 
 ## B. Evidencia de Existencia
-La validación de la empresa y del problema de negocio se respalda con los siguientes documentos, los cuales se encuentran adjuntos en la carpeta `assets/` de este repositorio:
+Documentos de la pyme,`assets/` de este repositorio:
 * **Anexo 1:** Certificado e-RUT de la empresa.
 
 
