@@ -16,8 +16,8 @@ Entrega 1
   * `03-er-preliminar.md`: Justificación base de datos.
 * **`assets/`**: Diagramas exportados y capturas de respaldo SII.
 * **`informe/`**: Informe Entrega 1.
-  * Informe completo en PDF.
-  * Archivo fuente LaTeX (.tex).
+  * Informe PDF.
+  * Archivo LaTeX (.tex).
 
 ## 3. Proyección para la Entrega 2
 * **Programa usado:** SQL.
