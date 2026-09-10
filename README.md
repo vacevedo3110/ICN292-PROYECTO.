@@ -3,6 +3,7 @@
 ## 1. Contexto del Proyecto
 * **Empresa:** "Inversiones Rumay Limitada"
 * **Rubro:** Construcción RUT: 76.380.707-K
+* Aclaración:** La constructora tiene de nombre "Constructora Altura". Sin embargo, opera ante el SII por el nombre de "Inversiones Rumay Ltda".
 * **Problema:** Actualmente, el dueño realiza todos los cálculos de costos de forma manual. Esto genera una demora de aproximadamente de 3 días para entregar una cotización y un margen de error de entre 10% y 20% en la estimación de costos, lo que termina impactando en el tiempo de espera de clientes y del desarrollo de los distintos proyectos.
 * **Objetivo del Sistema:** Automatizar el cálculo de los presupuestos y tener una base con los precios de materia prima (materiales, mano de obra, etc.) para reducir los tiempos de respuesta al cliente y evitar errores de presupuesto por fallas en el cálculo de precios y costos.
 
