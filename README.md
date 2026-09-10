@@ -20,7 +20,8 @@ Entrega 1
   * Archivo LaTeX (.tex).
 
 ## 3. Proyección para la Entrega 2
-* **Programa usado:** SQL.
+* **Base de datos:** SQL.
+* **Automatizacion:** n8n
 * El modelo de datos planteados serán la base para desarrollar el prototipo en un entorno local host. 
 
 ## 4. Equipo de Trabajo
