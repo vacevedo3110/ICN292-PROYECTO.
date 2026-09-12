@@ -33,5 +33,5 @@ Entrega 1
 7. **BENJAMIN ANDRES LARA ORELLANA** [Acercamiento con la PYME]
 
 ## 5.  Accesos Rápidos
-**Ruta al Informe Final PDF()** (FALTA)
-**Enlace de la entrega en Aula()**
+**[Ruta al Informe Final PDF](./informe/ICN292-Proyecto-E1.pdf)**
+**[Enlace de la entrega en Aula](https://aula.usm.cl/mod/assign/view.php?id=8305258&action=view)**
