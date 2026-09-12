@@ -18,7 +18,7 @@ Entrega 1
 * **`assets/`**: Diagramas exportados y capturas de respaldo SII.
 * **`informe/`**: Informe Entrega 1.
   * Informe PDF.
-  * Archivo LaTeX (.tex).
+  * Archivo Word (.docx).
 
 ## 3. Proyección para la Entrega 2
 * **Base de datos:** SQL.
