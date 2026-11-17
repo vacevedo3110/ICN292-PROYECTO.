@@ -8,8 +8,8 @@ Uso de la IA
 
 ## Para qué se usó
 - **Limpieza de datos:** ordenar el itemizado real de la empresa (unidades, códigos, partidas sin precio) y registrar cada cambio en un archivo de trazabilidad.
-- **Base de datos:** proponer y probar `schema.sql`, `seed.sql`, `consultas.sql` y `pruebas_restricciones.sql`.
-- **Aplicación:** apoyo en la programación de la aplicación web en Streamlit y sus pruebas.
+- **Base de datos:** corregir y probar `schema.sql`, `seed.sql`, `consultas.sql` y `pruebas_restricciones.sql`.
+- **Aplicación:** (Mayormente se uso en este punto) para generar y apoyar en la programación de la aplicación web en Streamlit y sus pruebas.
   
 ## Qué hizo el equipo
 - Levantó el caso con la empresa (entrevistas, itemizado real, reglas de gastos generales, utilidad y plazos) y definió los requerimientos, los BPMN y el modelo de la E1.
@@ -23,4 +23,5 @@ Todo el código se ejecutó y se probó:
 - `schema.sql` + `seed.sql` cargan sin errores en MySQL 8;
 - las consultas reproducen los resultados de `docs/04-sql-consultas.md`;
 - las pruebas de restricciones y de reglas de la app dan los resultados esperados.
+- todo el trabajo realizado por la IA fue revisado posteriormente por los integrantes del grupo. 
 
