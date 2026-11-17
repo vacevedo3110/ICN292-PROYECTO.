@@ -4,12 +4,13 @@
 - **Claude** (Anthropic), como asistente de programación y redacción durante la Entrega 2.
 
 ## Para qué se usó
-| Tarea | Uso de la IA |
-|---|---|
-| Limpieza de datos | Ordenar el itemizado real de la empresa (unidades, códigos, partidas sin precio) y registrar cada cambio en un archivo de trazabilidad. |
-| Base de datos | Proponer y probar `schema.sql`, `seed.sql`, `consultas.sql` y `pruebas_restricciones.sql`, ajustados al alcance SQL del curso |
-| Aplicación | Apoyo en la programacion de la aplicación web en Streamlit y sus pruebas. |
+Uso de la IA 
 
+## Para qué se usó
+- **Limpieza de datos:** ordenar el itemizado real de la empresa (unidades, códigos, partidas sin precio) y registrar cada cambio en un archivo de trazabilidad.
+- **Base de datos:** proponer y probar `schema.sql`, `seed.sql`, `consultas.sql` y `pruebas_restricciones.sql`.
+- **Aplicación:** apoyo en la programación de la aplicación web en Streamlit y sus pruebas.
+  
 ## Qué hizo el equipo
 - Levantó el caso con la empresa (entrevistas, itemizado real, reglas de gastos generales, utilidad y plazos) y definió los requerimientos, los BPMN y el modelo de la E1.
 - Decidió el alcance, el motor (MySQL) y las reglas de negocio, y validó las inferencias con la información de la empresa.
