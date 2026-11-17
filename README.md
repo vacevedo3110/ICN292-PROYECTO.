@@ -55,7 +55,7 @@ cd "ICN292-PROYECTO."
 mysql -u root -p < sql/schema.sql                                    # crea la base altura_db
 mysql -u root -p < sql/seed.sql                                      # carga los datos
 mysql -u root -p --table altura_db < sql/consultas.sql               # ejecuta las consultas
-mysql -u root -p --force altura_db < sql/pruebas_restricciones.sql   # (opcional) pruebas de integridad
+
 ```
 En MySQL Workbench: abrir cada archivo en ese orden y ejecutarlo completo (botón del rayo).
 Los resultados esperados y su interpretación están en [`docs/04-sql-consultas.md`](./docs/04-sql-consultas.md).
