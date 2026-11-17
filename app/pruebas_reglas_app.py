@@ -1,11 +1,10 @@
 """
-pruebas_reglas_app.py — Prueba las reglas de negocio que no caben en un CHECK y que hace
+Prueba las reglas de negocio que no caben en un CHECK y que hace
 cumplir app.py (flujo de estados, quién aprueba, cotizaciones pendientes, presupuestos
 cerrados, obra y envío solo de emitidos, historial de precios).
 
 Uso (con la base recién cargada con schema.sql + seed.sql, desde la carpeta de la app):
     python pruebas_reglas_app.py
-Cada prueba se deshace con ROLLBACK: la base no cambia.
 """
 import types, sys
 import pathlib
