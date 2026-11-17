@@ -8,12 +8,12 @@
 - **Aplicación web** (`app/app.py`, Streamlit): presupuestos con cálculo automático, alertas de precios, flujo de aprobación y PDF.
 - **Automatización n8n**: envío del presupuesto emitido al cliente por correo (Outlook) con el PDF adjunto (`docs/05-automatizacion-n8n.md`).
 - **Tablas nuevas:**
-  - `HISTORIAL_PRECIO`: qué precio se usa;
-  - `PARAMETRO_COSTO`: recargos de mano de obra nocturna y de fin de semana;
-  - `OBRA`: plazo ofrecido vs. real;
-  - `ENVIO_PRESUPUESTO`: registro de cada envío al cliente;
-  - `CORRECCION_PRESUPUESTO`: KPI de correcciones y % de error;
-  - `CAPITULO` y `UNIDAD_MEDIDA`: estructura del itemizado real;
+  - `HISTORIAL_PRECIO`: qué precio se usa,
+  - `PARAMETRO_COSTO`: recargos de mano de obra nocturna y de fin de semana,
+  - `OBRA`: plazo ofrecido vs. real,
+  - `ENVIO_PRESUPUESTO`: registro de cada envío al cliente,
+  - `CORRECCION_PRESUPUESTO`: KPI de correcciones y % de error,
+  - `CAPITULO` y `UNIDAD_MEDIDA`: estructura del itemizado real,
   - `ESPECIALIDAD`: las 5 especialidades externas de la entrevista.
 - **Columnas nuevas:**
   - en `PARTIDA`: `pct_mano_obra`, `origen_precio`, `fuente` y `activo`;
