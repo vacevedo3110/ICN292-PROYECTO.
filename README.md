@@ -35,7 +35,7 @@ app/
   secrets.toml.example        Plantilla de configuración (MySQL y n8n)
   pruebas_reglas_app.py       Pruebas de las reglas de negocio de la app
 n8n/
-  flujo-envio-presupuesto.json  Flujo exportado desde n8n (importable)
+  flujo-envio-presupuesto.json  Flujo exportado desde n8n
 assets/                       Diagramas BPMN y E/R, capturas de respaldo SII
 informe/                      Informes E1 y E2 (PDF + Word/LaTeX)
 presentacion/                 Diapositivas
