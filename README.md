@@ -17,8 +17,6 @@ ICN-292 Sistemas de Información para la Gestión · Universidad Técnica Federi
 
 ## 3. Organización del repositorio
 
-README.md                     Este archivo: contexto y cómo ejecutar
-ENLACE_GITHUB.txt             URL + commit/tag de la versión defendida
 docs/
   00-caso-pyme.md             Datos de la empresa
   01-requerimientos.md        Alcance, actores y requisitos
