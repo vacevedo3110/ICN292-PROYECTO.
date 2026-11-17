@@ -1,0 +1,11 @@
+# Archivos que no se suben al repositorio
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+*.xlsx
+.claude/
+.agents/
+1381.pdf
