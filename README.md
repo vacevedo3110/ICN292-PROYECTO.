@@ -1,6 +1,6 @@
-# Proyecto ICN292 — Sistema de presupuestos para Constructora Altura
+# Proyecto ICN292 Sistema de presupuestos para Constructora Altura
 
-ICN-292 Sistemas de Información para la Gestión · Universidad Técnica Federico Santa María · Segundo semestre 2026
+ICN-292 Sistemas de Información para la Gestión Universidad Técnica Federico Santa María 
 
 ## 1. Contexto del proyecto
 * **Empresa:** Inversiones Rumay Limitada
