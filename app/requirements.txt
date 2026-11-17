@@ -1,5 +1,5 @@
 # Dependencias de la aplicación web (app.py). Instalar con: pip install -r requirements.txt
-# Versiones probadas con Python 3.13 y MySQL 8.0.46.
+# Versiones probadas con Python 3.13 y MySQL 8.0.46
 streamlit>=1.45
 mysql-connector-python>=9.0
 pandas>=2.2
