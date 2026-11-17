@@ -1,7 +1,5 @@
 # Modelo de Datos y Normalización (3FN)
 
-![Modelo E/R en 3FN](../assets/ER_3FN.png)
-
 ## 1. Introducción
 Este documento justifica el diseño de la base de datos relacional del Sistema de Gestión de Presupuestos de Inversiones Rumay Limitada (Constructora Altura). El modelo cumple la Tercera Forma Normal (3FN), asegura la integridad referencial y elimina las anomalías de actualización, inserción y borrado que tenía el proceso As-Is basado en planillas Excel.
 
