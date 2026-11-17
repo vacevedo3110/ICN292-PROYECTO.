@@ -123,6 +123,7 @@ DELETE FROM DETALLE_PRESUPUESTO WHERE id_presupuesto = 7;
 DELETE FROM PRESUPUESTO WHERE id_presupuesto = 7;
 SELECT COUNT(*) AS presupuestos_con_id_7 FROM PRESUPUESTO WHERE id_presupuesto = 7;
 
+-- Se usa rollback para volver al incio
 ROLLBACK;
 SELECT 'Fin de las pruebas: se hizo ROLLBACK, la base quedó como después del seed' AS fin;
 SELECT COUNT(*) AS presupuestos, SUM(IF(id_presupuesto = 7, 1, 0)) AS sigue_el_7 FROM PRESUPUESTO;
