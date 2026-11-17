@@ -1,7 +1,5 @@
 # CHANGELOG — Cambios desde la Entrega 1
 
-## [E2] — Noviembre 2026
-
 ### Agregado
 - **Base de datos MySQL 8** ejecutable: `sql/schema.sql` (16 tablas, claves, restricciones y vistas) y `sql/seed.sql` (catálogo real de la empresa y presupuestos de ejemplo).
 - **Consultas de negocio** (`sql/consultas.sql`): las 3 preguntas del Gerente General y los KPI de la E1, interpretadas en `docs/04-sql-consultas.md`.
@@ -39,5 +37,3 @@
 ### Eliminado
 - Totales guardados en tablas: el costo directo, los gastos generales, la utilidad, el IVA y el total se calculan con vistas SQL (3FN).
 
-## [E1] — Septiembre 2026
-- Caso PYME, requerimientos, BPMN AS-IS y TO-BE, y modelo E/R preliminar.
