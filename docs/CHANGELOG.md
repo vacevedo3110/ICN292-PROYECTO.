@@ -22,7 +22,7 @@
 - **Motor:** MySQL 8 (la E1 indicaba PostgreSQL).
 - **RN-4 (vigencia de precios):** vigente < 3 meses, por revisar 3–6, vencido > 6, porque la empresa actualiza precios con cada obra nueva (cada 3 a 6 meses).
 - **RN-5 (gastos generales):** entre 5 % y 12 %, con justificación sobre 10 %, según ubicación, jornada y fines de semana.
-- **RN-7 / RF8 (flujo):** se agrega el estado «En revisión». Flujo: Borrador → En revisión → Aprobado → Emitido; solo el Gerente General aprueba.
+- **RN-7 / RF8 (flujo):** se agrega el estado «En revisión». Flujo: Borrador → En revisión → Aprobado → Emitido; solo el Gerente General aprueba
 - **`PRESUPUESTO.fecha_creacion`** se reemplaza por `fecha_inicio`, `fecha_aprobacion` y `fecha_emision`, para medir el tiempo de elaboración en horas (meta: 4 h).
 - **`DETALLE_PRESUPUESTO`:** clave compuesta (`id_presupuesto`, `id_partida`), que impide repetir una partida en un presupuesto.
 - **`COTIZACION_EXTERNA`:** se agregan `fecha_solicitud` y `seleccionada`; el monto queda vacío mientras la cotización está pendiente.
