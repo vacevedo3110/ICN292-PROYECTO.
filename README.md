@@ -8,22 +8,20 @@ ICN-292 Sistemas de Información para la Gestión Universidad Técnica Federico 
 * **Aclaración:** La constructora usa el nombre "Constructora Altura", pero opera ante el SII como "Inversiones Rumay Ltda.".
 * **Problema:** El dueño hace todos los cálculos de costos a mano. Entregar una cotización demora unos 3 días y la estimación de costos tiene un margen de error de entre 10 % y 20 %, lo que alarga la espera de los clientes y el desarrollo de los proyectos.
 * **Objetivo del sistema:** Automatizar el cálculo de los presupuestos y mantener una base de precios (materiales, mano de obra, subcontratos) para responder más rápido al cliente y evitar errores de cálculo.
-
 ## 2. Solución (Entrega 2)
 * **Base de datos MySQL 8** en 3FN: catálogo de partidas con historial de precios, presupuestos, cotizaciones externas, correcciones, obras y envíos. Los totales (costo directo, gastos generales, utilidad, IVA y UF) se calculan con vistas.
 * **Aplicación web** (Streamlit, en local host): arma presupuestos con cálculo automático, avisa de precios por revisar o vencidos, controla el flujo Borrador → En revisión → Aprobado → Emitido (solo el Gerente aprueba) y genera el PDF del presupuesto.
-* **Automatización (n8n):** al emitir un presupuesto, la app lo envía a n8n, que lo despacha al cliente por correo (Outlook) con el PDF adjunto. Ver [`docs/05-automatizacion-n8n.md`](./docs/05-automatizacion-n8n.md).
-```
+* **Automatización (n8n):** al emitir un presupuesto, la app lo envía a n8n, que lo despacha al cliente por correo (Outlook) con el PDF adjunto. El flujo exportado está en [`n8n/`](./n8n/) y su explicación paso a paso en [`docs/05-automatizacion-n8n.md`](./docs/05-automatizacion-n8n.md).
 
 ## 3. Organización del repositorio
-
+```
 docs/
   00-caso-pyme.md             Datos de la empresa
   01-requerimientos.md        Alcance, actores y requisitos
   02-bpmn.md                  Procesos AS-IS y TO-BE (final)
   03-modelo-datos.md          Cambios E1 → E2, 3FN, diccionario de datos y reglas
   04-sql-consultas.md         Resultados de las consultas e interpretación
-  05-automatizacion-n8n.md    Flujo n8n y su tarea en el BPMN to-be
+  05-automatizacion-n8n.md    Flujo n8n paso a paso y su tarea en el BPMN to-be
   DECLARACION_IA.md           Uso de herramientas de IA
   CHANGELOG.md                Cambios relevantes desde la Entrega 1
 sql/
@@ -36,24 +34,12 @@ app/
   requirements.txt            Dependencias de Python
   secrets.toml.example        Plantilla de configuración (MySQL y n8n)
   pruebas_reglas_app.py       Pruebas de las reglas de negocio de la app
+n8n/
+  flujo-envio-presupuesto.json  Flujo exportado desde n8n (importable)
 assets/                       Diagramas BPMN y E/R, capturas de respaldo SII
 informe/                      Informes E1 y E2 (PDF + Word/LaTeX)
 presentacion/                 Diapositivas
-
-
-## 4. Cómo ejecutar
-
-### Requisitos
-* MySQL 8.0.16 o superior.
-* Python 3.10 o superior.
-
-### 4.1 Crear la base y ejecutar las consultas
-```bash
-git clone https://github.com/vacevedo3110/ICN292-PROYECTO.
-cd "ICN292-PROYECTO."
-mysql -u root -p < sql/schema.sql                                    # crea la base altura_db
-mysql -u root -p < sql/seed.sql                                      # carga los datos
-mysql -u root -p --table altura_db < sql/consultas.sql               # ejecuta las consultas
+```
 
 ```
 En MySQL Workbench: abrir cada archivo en ese orden y ejecutarlo completo (botón del rayo).
