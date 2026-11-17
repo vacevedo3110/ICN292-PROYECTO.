@@ -20,8 +20,8 @@ Uso de la IA
 
 ## Verificación
 Todo el código se ejecutó y se probó:
-- `schema.sql` + `seed.sql` cargan sin errores en MySQL 8;
-- las consultas reproducen los resultados de `docs/04-sql-consultas.md`;
-- las pruebas de restricciones y de reglas de la app dan los resultados esperados.
-- todo el trabajo realizado por la IA fue revisado posteriormente por los integrantes del grupo. 
+- `schema.sql` + `seed.sql` cargan sin errores en MySQL 8,
+- las consultas reproducen los resultados de `docs/04-sql-consultas.md`,
+- las pruebas de restricciones y de reglas de la app dan los resultados esperados,
+- todo el trabajo realizado por la IA fue revisado posteriormente por los integrantes del grupo.
 
