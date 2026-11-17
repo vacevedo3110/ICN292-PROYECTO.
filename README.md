@@ -15,7 +15,7 @@ ICN-292 Sistemas de Información para la Gestión · Universidad Técnica Federi
 * **Automatización (n8n):** al emitir un presupuesto, la app lo envía a n8n, que lo despacha al cliente por correo (Outlook) con el PDF adjunto. Ver [`docs/05-automatizacion-n8n.md`](./docs/05-automatizacion-n8n.md).
 
 ## 3. Organización del repositorio
-```
+
 README.md                     Este archivo: contexto y cómo ejecutar
 ENLACE_GITHUB.txt             URL + commit/tag de la versión defendida
 docs/
@@ -40,7 +40,7 @@ app/
 assets/                       Diagramas BPMN y E/R, capturas de respaldo SII
 informe/                      Informes E1 y E2 (PDF + Word/LaTeX)
 presentacion/                 Diapositivas
-```
+
 
 ## 4. Cómo ejecutar
 
@@ -61,7 +61,7 @@ En MySQL Workbench: abrir cada archivo en ese orden y ejecutarlo completo (botó
 Los resultados esperados y su interpretación están en [`docs/04-sql-consultas.md`](./docs/04-sql-consultas.md).
 
 ### 4.2 Ejecutar la aplicación
-```bash
+bash
 cd app
 python3 -m venv .venv
 source .venv/bin/activate                  # en Windows: .venv\Scripts\activate
@@ -69,7 +69,7 @@ python -m pip install -r requirements.txt
 mkdir -p .streamlit
 cp secrets.toml.example .streamlit/secrets.toml   # completar usuario y contraseña de MySQL
 python -m streamlit run app.py
-```
+
 Se abre en http://localhost:8501. Usuarios de prueba (contraseña `demo123`):
 * `gerencia@constructora-altura.example`: Gerente General (aprueba y rechaza)
 * `presupuestos@constructora-altura.example`: Asistente
