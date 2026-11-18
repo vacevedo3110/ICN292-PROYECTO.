@@ -4,7 +4,7 @@
 - **Base de datos MySQL 8** ejecutable: `sql/schema.sql` (16 tablas, claves, restricciones y vistas) y `sql/seed.sql` (catálogo real de la empresa y presupuestos de ejemplo).
 - **Consultas de negocio** (`sql/consultas.sql`): las 3 preguntas del Gerente General y los KPI de la E1, interpretadas en `docs/04-sql-consultas.md`.
 - **Aplicación web** (`app/app.py`, Streamlit): presupuestos con cálculo automático, alertas de precios, flujo de aprobación y PDF.
-- **Automatización n8n**: envío del presupuesto emitido al cliente por correo (Outlook) con el PDF adjunto (`docs/05-automatizacion-n8n.md`).
+- **Automatización n8n:** envío de presupuestos emitidos por **SMTP** con PDF adjunto, mediante un webhook protegido con **Basic Auth**. Ver [documentación de n8n](./05-n8n.md).
 - **Actor Asistente**: elabora presupuestos, registra partidas y pide cotizaciones externas; no puede aprobar. Se separa del Gerente General, que aprueba (`docs/01-requerimientos.md`).
 - **RF10**: envío automático del presupuesto emitido al cliente y registro de cada envío.
 - **Tablas nuevas:**
