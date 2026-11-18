@@ -1,1 +1,165 @@
-
+{
+  "name": "Envío de presupuesto al cliente - SMTP",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "presupuesto-emitido",
+        "authentication": "basicAuth",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d5c8f4ad-4a86-422c-9d01-b19b24cb37c3",
+      "name": "Webhook",
+      "webhookId": "bcc3b2ea-4fbe-4953-aad6-f696560500df",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "pLXtUaxt8GkCoIbJ",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "toBinary",
+        "sourceProperty": "body.pdf.base64",
+        "options": {
+          "fileName": "={{ $('Webhook').item.json.body.pdf.nombre_archivo }}",
+          "mimeType": "application/pdf"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "1b14f371-71b7-47dd-a1d5-e7cee5d327cf",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\"ok\": true}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        672,
+        0
+      ],
+      "id": "67a439df-802e-4d77-92a6-bad47b0e99df",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\"ok\": false, \"error\": \"No fue posible enviar el correo por SMTP\"}",
+        "options": {
+          "responseCode": 500
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        704,
+        112
+      ],
+      "id": "7579c547-3053-4652-bd06-5074a3e298d4",
+      "name": "Respond to Webhook1"
+    },
+    {
+      "parameters": {
+        "fromEmail": "contacto@alturaconstructores.cl",
+        "toEmail": "=  {{ $('Webhook').item.json.body.email_destino }}",
+        "subject": "=  {{ $('Webhook').item.json.body.asunto }}",
+        "emailFormat": "text",
+        "text": "=  {{ $('Webhook').item.json.body.cuerpo }}",
+        "options": {
+          "fileAttachments": "data"
+        }
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        496,
+        0
+      ],
+      "id": "578ce5d6-f774-4b4e-bd48-0ee0881c2e93",
+      "name": "Send an Email",
+      "webhookId": "4857876a-3234-4029-b260-5fd7f12d9e2b",
+      "credentials": {
+        "smtp": {
+          "id": "gqQIdLRAoWy3XzcP",
+          "name": "SMTP account"
+        }
+      },
+      "onError": "continueErrorOutput"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Send an Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send an Email": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "f75b480c-c529-4553-82c7-8ea8ad47fab0",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e22fd124306de7f77b1fc505a022c5d64837e46b024a7ff65447d2d860a99b77"
+  },
+  "nodeGroups": [],
+  "id": "pxQupEoMqLWUoF3S",
+  "tags": []
+}
