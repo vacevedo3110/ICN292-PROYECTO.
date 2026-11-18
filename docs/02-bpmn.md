@@ -24,8 +24,6 @@ Todo el proceso depende del Gerente General y de cálculos manuales en planillas
 
 ## 2. Proceso propuesto (To-Be final)
 
-![BPMN To-Be final](../assets/BPMN-TO-BE-final.png)
-
 ### Participantes
 
 | Pool / carril | Rol en el proceso |
