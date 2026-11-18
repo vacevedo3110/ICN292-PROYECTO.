@@ -11,7 +11,7 @@ ICN-292 Sistemas de Información para la Gestión Universidad Técnica Federico 
 ## 2. Solución (Entrega 2)
 * **Base de datos MySQL 8** en 3FN: catálogo de partidas con historial de precios, presupuestos, cotizaciones externas, correcciones, obras y envíos. Los totales (costo directo, gastos generales, utilidad, IVA y UF) se calculan con vistas.
 * **Aplicación web** (Streamlit, en local host): arma presupuestos con cálculo automático, avisa de precios por revisar o vencidos, controla el flujo Borrador → En revisión → Aprobado → Emitido (solo el Gerente aprueba) y genera el PDF del presupuesto.
-* **Automatización (n8n):** al emitir un presupuesto, la app lo envía a n8n, que lo despacha al cliente por correo (Outlook) con el PDF adjunto. El flujo exportado está en [`n8n/`](./n8n/) y su explicación paso a paso en [`docs/05-automatizacion-n8n.md`](./docs/05-automatizacion-n8n.md).
+* **Automatización (n8n):** desde un presupuesto emitido, el usuario pulsa **Enviar presupuesto**. Streamlit envía el PDF a un webhook protegido con Basic Auth y n8n lo despacha por **SMTP**. Consulta el [workflow exportado](./n8n/flujo-envio-presupuesto.json) y la [documentación de la automatización](./docs/05-n8n.md).
 
 ## 3. Organización del repositorio
 ```
