@@ -45,7 +45,7 @@ Los pools externos se comunican con la constructora solo mediante flujos de mens
 | Se agrega el carril **Asistente** | La app y la base tienen dos roles. Separar elaborar de aprobar descarga al Gerente del cálculo y le da sentido a la RN-7 (solo el Gerente aprueba). |
 | Se agrega el carril **Sistema (app + n8n)** | Deja visibles las tareas automatizadas: cálculo, alertas de precios, PDF y envío. |
 | La aprobación pasa a ser un **gateway XOR con retorno a Borrador** | Refleja el flujo real del sistema: Borrador → En revisión → Aprobado / Rechazado → Emitido. |
-| «Enviar presupuesto al cliente» pasa a ser una **tarea de servicio (n8n)** | Es la tarea automatizada de la Entrega 2; antes era un envío manual. |
+| Enviar presupuesto al cliente» (tarea de servicio, n8n)| la app genera el PDF y n8n lo envía al cliente por **SMTP** desde la cuenta corporativa. La app registra el resultado del envío. Ver [documentación de n8n](./05-n8n.md).
 | Las **cotizaciones externas** quedan expandidas, con flujos de mensaje | Son el cuello de botella real: los presupuestos con externos demoran 7–8 días. |
 | Se mantienen las **cuatro fases** del As-Is | Facilita comparar ambos procesos fase por fase. |
 | Gastos generales: 5–12 % según ubicación, jornada y fines de semana; se agregan la utilidad (12–20 %) y el IVA | Información de la entrevista final con la empresa; reemplaza la regla de la E1 (diurna 5–8 %, nocturna 8–12 %). |
