@@ -21,7 +21,7 @@ docs/
   02-bpmn.md                  Procesos AS-IS y TO-BE (final)
   03-modelo-datos.md          Cambios E1 → E2, 3FN, diccionario de datos y reglas
   04-sql-consultas.md         Resultados de las consultas e interpretación
-  05-automatizacion-n8n.md    Flujo n8n paso a paso y su tarea en el BPMN to-be
+  05-n8n.md                   Flujo n8n paso a paso y su tarea en el BPMN to-be
   DECLARACION_IA.md           Uso de herramientas de IA
   CHANGELOG.md                Cambios relevantes desde la Entrega 1
 sql/
