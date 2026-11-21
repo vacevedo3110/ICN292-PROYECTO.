@@ -37,7 +37,7 @@ app/
 n8n/
   flujo-envio-presupuesto.json  Flujo exportado desde n8n
 assets/                       Diagramas BPMN y E/R, capturas de respaldo SII
-informe/                      Informes E1 y E2 (PDF + Word/LaTeX)
+informe/                      Informes E1 y E2 (PDF + Word)
 presentacion/                 Diapositivas
 ```
 
